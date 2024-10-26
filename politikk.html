@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pludo Samfunnskunnskap</title>
+    <link rel="stylesheet" href="css/frontpagePreview.css">
+    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div hx-get="/components/nav.html" hx-trigger="load" hx-swap="this"></div>
+
+    <div class="previewOfContentPage">
+        <div class="listOfContentPreview article-container">
+            <div hx-get="/previews/politikk.html" hx-trigger="load" hx-swap="innerHTML"></div>
+        </div>
+    </div>
+</body>
+</html>
